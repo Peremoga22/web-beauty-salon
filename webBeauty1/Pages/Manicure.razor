@@ -1,0 +1,68 @@
+﻿@page "/manicure"
+
+
+
+<h3 style="padding-top: 5%;"></h3>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item p-1"><a href="/">Домашня сторінка</a></li>
+        <li class="breadcrumb-item active p-1" aria-current="page">Манікюр</li>
+    </ol>
+</nav>
+<div>
+    <div class="container col-10 col-sm-12  ">
+        <div class="row d-flex  justify-content-center m-sm-12">
+           
+            
+                <div class="card-deck card-sm-gutters-3 d-block d-sm-flex col-md-4 col-sm-offset-8 col-xs-12 text-center padding wow fadeIn service-item  p-3 mb-5 rounded card-sm-gutters-1 d-block d-sm-flex">
+                    <div class="card shadow-lg h-100 mb-3">
+                        <img src="/img/manicure_mean01.jpg" class="img-thumbnail text-right" style="margin-right:auto;margin-left:auto; width:100%" alt="" />
+                        <div class="card-body ">
+                        <h5 class="card-title">Чоловічий манікюр </h5>
+                        <p class="card-text">Чоловічий манікюр – це догляд руками, нігтями; майстер створює акуратну форму, що підходить під форму пальців. Проводяться основні процедури: видалення кутикули, задирок та інших дефектів, якщо такі є. Усі ці маніпуляції можна проводити кількома способами. Триває 1 годину</p>
+                        </div>
+                        <div class="card-footer">
+                        <a class="btn btn-outline-primary text-center m-1" href="">400 Грн</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck card-sm-gutters-3 d-block d-sm-flex col-md-4 col-sm-offset-8 col-xs-12 text-center padding wow fadeIn service-item  p-3 mb-5 rounded card-sm-gutters-1 d-block d-sm-flex">
+                    <div class="card shadow-lg h-100 mb-3">
+                        <img src="/img/fixNail.jpg" class="img-thumbnail text-right" style="margin-right:auto;margin-left:auto; width:100%" alt="" />
+                        <div class="card-body ">
+                        <h5 class="card-title">Ремонт/нарощення </h5>
+                        <p class="card-text">@nailRestoration</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-outline-primary text-center m-1" href="">50-90 Грн</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck card-sm-gutters-3 d-block d-sm-flex col-md-4 col-sm-offset-8 col-xs-12 text-center padding wow fadeIn service-item  p-3 mb-5 rounded card-sm-gutters-1 d-block d-sm-flex">
+                    <div class="card shadow-lg h-100 mb-3">
+                        <img src="/img/qwe.jpg" class="img-thumbnail text-right" style="margin-right:auto;margin-left:auto; width:100%" alt="" />
+                        <div class="card-body ">
+                        <h5 class="card-title">@manicureTitle</h5>
+                        <p class="card-text">@manicureDescription</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-outline-primary text-center m-1" href="">350 Грн</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    string manicure = "Манік'юр";
+    string nailRestoration ="Послуга фокусується на відновленні лише одного пошкодженого нігтя, що дозволяє зосередитися на проблемній ділянці і зекономити час. Ремонт одного нігтя дозволяє зберегти стиль і форму інших нігтьових пластин, які не потребують корекції.Довірте професіоналам забезпечити вам якісний ремонт та продовжити насолоджуватися бездоганним манікюром.";
+    string manicureTitle = "Манікюр (чистка комбінована без подальшого покриття)";
+    string manicureDescription = "Гель-лак на нарощених нігтях – це модний вигляд нарощування. Нігтьові пластини покриваються гелем, який є відносно стійким і може триматися на нігтях аж до місяця. ";
+}
