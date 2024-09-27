@@ -179,5 +179,8 @@ app {
     .sidebar .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
-    }
+    }    
+}
+
+@media (min-width: 800px) {
 }

@@ -1,13 +1,20 @@
 ﻿@page "/our-services"
+@using webBeauty1.Helper
 
-<h3 style="padding-top: 8%;"></h3>
 
-<h3 class="m-3 p-3"></h3>
+<h3 style="padding-top: 7%;"></h3>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item p-1"><a href="/">Домашня сторінка</a></li>
+        <li class="breadcrumb-item active p-1" aria-current="page">Наші послуги</li>
+    </ol>
+</nav>
 <div class="container space-2 space-top-md-5 space-top-lg-4">
     <div class="w-lg-80 text-center mx-lg-auto">
         <div class="mb-11">
             <h1 class="display-4 font-weight-semi-bold">Наші послуги</h1>
-            <p class="lead font-weight-normal">We're on a mission to simplify cloud computing so developers and their teams can spend more time building software that changes the world.</p>
+            <p class="lead font-weight-normal">@ShowDescription()</p>
         </div>
     </div>
     <!-- Gallery Section -->
@@ -43,4 +50,9 @@
 
 @code {
 
+    public string ShowDescription()
+    {       
+        return GeneralStatic.ShowDescription();
+    }
+            
 }
