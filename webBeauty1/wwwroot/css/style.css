@@ -2352,3 +2352,16 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+.footer .cop-block {
+    padding: 5px 0;  
+    font-size: 15px;
+    font-family: Open Sans;    
+}
+
+.white-line {
+    border: none; /* Прибрати стандартний стиль */
+    height: 2px; /* Висота лінії */
+    background-color: white; /* Колір лінії */
+    margin: 5px 0; /* Відступи зверху і знизу */
+}
